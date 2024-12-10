@@ -1,19 +1,21 @@
 {
   "compilerOptions": {
-    "module": "ESNext",  
-    "moduleResolution": "Node", 
-    "target": "ESNext", 
-    "esModuleInterop": true,  
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ES2020", 
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": true,
     "resolveJsonModule": true,
     "baseUrl": "./src",
     "typeRoots": ["./src/types", "./node_modules/@types"],
     "paths": {
-      "*": ["node_modules/*"]  
-    }
+      "*": ["node_modules/*"]
+    },
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declaration": true
   },
-  // "include": ["src/**/*", "src/types/**/*.d.ts"],
   "include": ["src/**/*"],
   "ts-node": {
     "esm": true
